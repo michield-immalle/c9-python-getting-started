@@ -12,3 +12,25 @@
 # Charlie should be in room C
 # Khalid Haque should be in room OTHER
 # Xin Zhao should be in room Z
+
+naam= input("wat is uw naam: ")
+eerste_letter= naam[0:1]
+
+if eerste_letter.upper() in ('B','A'):
+    kamer= 'AB'
+
+elif eerste_letter.upper() == 'C':
+    kamer= 'C'
+
+else:
+
+    achternaam = input("Wat is je achternaam? ")
+    achternaam_letter = achternaam[0:1]
+
+    if achternaam_letter.upper() == "Z":
+
+        kamer= 'Z'
+    else:
+
+        kamer= 'OTHER'
+print('ga naar kamer ' + kamer) 
